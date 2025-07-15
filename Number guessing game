@@ -1,0 +1,11 @@
+import random
+number=random.randint(1,100)
+print("Welcome to the game.")
+while True:
+    guess=int(input("Guess number:"))
+    if guess < number:
+        print("Too Low,Try again.")
+    elif(guess>number):
+        print("Too High,Try again.")
+    else:
+        print("yes yow guessed the correct number:{number} ")
